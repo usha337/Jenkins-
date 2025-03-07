@@ -1,5 +1,5 @@
 pipeline {
-  withDockerContainer('bibinwilson/jenkins-slave:latest')
+  agent { docker 'jdk-slave' }
 // agent 'jdk-slave'
 // {
 //     docker {

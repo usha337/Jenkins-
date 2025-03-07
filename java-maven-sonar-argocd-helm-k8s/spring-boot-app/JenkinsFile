@@ -1,5 +1,6 @@
 pipeline {
-  agent 'jdk-slave'
+  withDockerContainer('bibinwilson/jenkins-slave:latest')
+// agent 'jdk-slave'
 // {
 //     docker {
 //       image 'abhishekf5/maven-abhishek-docker-agent:v1'
